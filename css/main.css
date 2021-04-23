@@ -94,6 +94,8 @@
   
   body {
     background-color: black;
+    animation: fadeIn .75s;
+    -webkit-animation: fadeIn .75s;
   }
   #full {
     z-index: 1;
@@ -126,6 +128,16 @@
     -webkit-animation: moveBg 60s infinite alternate linear;
     animation: moveBg 60s infinite alternate linear;
     opacity: 0.15;
+  }
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
   }
   
   @-webkit-keyframes moveBg {
@@ -171,11 +183,6 @@
       left:1%;
     }
   }
-  
-  /* .logo-1 {
-    color: white;
-    animation: neon 3s infinite;
-  } */
   
   @keyframes neon {
     0% {
