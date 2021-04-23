@@ -165,6 +165,12 @@
     animation: neon 3s infinite;
     letter-spacing: .25em;
   }
+
+  @media screen and (max-width: 600px) {
+    .header {
+      left:1%;
+    }
+  }
   
   /* .logo-1 {
     color: white;
